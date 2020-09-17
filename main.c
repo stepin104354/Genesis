@@ -16,26 +16,27 @@ int main()
     printf("Enter the numerands\n");
     scanf("%d %d",&a,&b);
     printf("Following are the otions for calc\n");
-    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division");
-    int res,ch;
+    int res;
     switch (ch)
     {
-      case 1:
+      case '+':
               res = add(a,b);
               printf("%d", res);
              break;
-      case 2:
+      case '-':
               res = sub(a,b);
               printf("%d", res);
               break;
-      case 3:
+      case '*':
               res = mul(a,b);
               printf("%d", res);
               break;
-      case 4:
+      case '/': 
               res = div(a,b);
               printf("%d", res);
               break;
+      default:
+            printf("Error! operator is not correct");
     }
     return 0;
 }
