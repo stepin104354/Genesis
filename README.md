@@ -1,2 +1,2 @@
 # Genesis
-Code practoces for LTTS Genesis programme
+Code practices for LTTS Genesis programme
