@@ -13,32 +13,40 @@ int div(int, int);
 int main()
 {
     int a,b;
-    char op;
+    int op;
     printf("Enter the numerands\n");
     scanf("%d %d",&a,&b);
     printf("Enter the option for calc\n");
-    printf("Enter an operator (+, -, *, /): ");
-    scanf("%c", &op);
+    printf("Enter an operator (1, 2, 3, 4): ");
+    scanf("%d", &op);
     int res;
     switch (op)
     {
-      case '+':
-              res = add(a,b);
-              printf("%d", res);
-             break;
-      case '-':
-              res = sub(a,b);
+      case 1:
+        {      
+                res = add(a,b);
+                printf("%d", res);
+                break;
+        }
+        case 2:
+        {
+                res = sub(a,b);
               printf("%d", res);
               break;
-      case '*':
-              res = mul(a,b);
+        }
+        case 3:
+        {
+                      res = mul(a,b);
               printf("%d", res);
               break;
-      case '/': 
+        }
+        case 4:
+        { 
               res = div(a,b);
               printf("%d", res);
               break;
-      default:
+        }
+        default:
             printf("Error! operator is not correct");
     }
     return 0;
