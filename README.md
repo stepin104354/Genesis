@@ -1,2 +1,2 @@
 # Genesis
-Code practices for LTTS Genesis programme
+This repository is for the code practices during the Genesis programme of LTTS
