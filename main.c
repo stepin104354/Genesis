@@ -13,11 +13,14 @@ int div(int, int);
 int main()
 {
     int a,b;
+    char op;
     printf("Enter the numerands\n");
     scanf("%d %d",&a,&b);
-    printf("Following are the otions for calc\n");
+    printf("Enter the option for calc\n");
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &op);
     int res;
-    switch (ch)
+    switch (op)
     {
       case '+':
               res = add(a,b);
